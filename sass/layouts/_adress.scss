@@ -1,0 +1,25 @@
+.link,
+.contact-link {
+	text-decoration: none;
+	@include fons (14px, none, 2, 0.03em);
+	@include transition (250ms, cubic-bezier(0.4, 0, 0.2, 1));
+	
+	.address .address-link:hover & {
+		color: var(--accent-color);
+	}
+	.address-link &:focus {
+		color: var(--accent-color);
+	}
+}
+
+.address {
+	font-style: normal;
+	& .link {
+		color: var(--white-color);
+		margin-top: 0px;
+	}
+}
+
+.contact-link {
+	color: rgba(255, 255, 255, 0.6);
+}

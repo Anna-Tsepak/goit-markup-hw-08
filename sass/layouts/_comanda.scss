@@ -1,0 +1,73 @@
+.comanda {
+  background-color: #f5f4fa;
+}
+.comanda__paragraph {
+  background-color: #FFFFFF;
+}
+
+.comanda__people {
+  color: var(--title-text-color);
+  @include fons (16px, 500, 1.18, 0.03em);
+  margin-bottom: 0px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.comanda__title {
+  padding-top: 30px;
+  padding-bottom: 30px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+&.social-network {
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+.comanda__job {
+  color: var(--primary-text-color);
+  @include fons (16px, none, 1.18, 0.03em);
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.comanda__list{
+display: flex;
+ &.comanda__paragraph {
+    gap: 30px;
+  }
+}
+
+
+
+.social-network .social-network__link {
+display: flex;
+width: 44px;
+height: 44px;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+padding: 12px;
+background-color:#FFFFFF;
+@include transition (250ms, cubic-bezier(0.4, 0, 0.2, 1));
+
+  &:hover,
+  &:focus {
+      background-color: var(--accent-color);
+    }
+}
+
+.social-network__icon{
+  display: flex;
+  fill: #AFB1B8;
+  justify-content: center;
+  align-items: center;
+  @include transition (250ms, cubic-bezier(0.4, 0, 0.2, 1));
+  .social-network .social-network__link:focus &,
+  .social-network .social-network__link:hover & {
+    fill: #FFFFFF;
+
+  }
+}

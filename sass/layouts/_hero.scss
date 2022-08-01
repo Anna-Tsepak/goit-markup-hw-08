@@ -1,0 +1,41 @@
+.header {
+  background-color: var(--white-color);
+}
+.hero {
+    background-color: var(--hero-futter-color);
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)),
+        url(../images/fon.jpg);
+    max-width: 1600px;
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-title {
+    text-transform: uppercase;
+    color: var(--white-color);
+    @include fons (44px, 900, 1.36, 0.06em);
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+
+.hero-button {
+    font-family: inherit;
+    cursor: pointer;
+    @include fons (16px, 700, 1.9, 0.06em);
+    color: #FFFFFF;
+    padding: 10px 32px 10px 32px;
+    border-radius: 4px;
+    border: var(--accent-color);
+    background-color: var(--accent-color); 
+    @include transition (250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    &:hover,
+&:focus {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+}

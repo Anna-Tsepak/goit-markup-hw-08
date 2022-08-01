@@ -1,0 +1,37 @@
+.auth-nov {
+    display: flex;
+    margin-left: auto;
+    &.item:not(:last-child) {
+            margin-right: 50px;
+        }
+}
+
+
+.link-auth-now {
+    display: flex;
+    text-decoration: none;
+    @include fons (14px, 500, 1.14, 0.02em);
+    color: var(--primary-text-color);
+    justify-content: center;
+    align-items: center;
+    @include transition (250ms, cubic-bezier(0.4, 0, 0.2, 1));
+
+    .item &:hover,
+    .item &:focus{
+        color: var(--accent-color);
+            fill: var(--accent-color);
+            }
+}
+.icon-contacts {
+    display: flex;
+    fill: #757575;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    @include transition (250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    .link-auth-now:hover &,
+        .link-auth-now:focus & {
+            color: var(--accent-color);
+            fill: var(--accent-color);
+        }
+}

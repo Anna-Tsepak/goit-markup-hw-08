@@ -1,0 +1,31 @@
+.regular-castomers {
+    display: flex;
+    gap: 30px;
+
+}
+.regular-castomers__list .regular-castomers__link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    @include transition (250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    .regular-castomers &:hover {
+            fill: var(--accent-color);
+            border-color: var(--accent-color);
+           & :focus {
+                    fill: var(--accent-color);
+                    border-color: var(--accent-color)  }  }
+}
+
+.regular-castomers__icon {
+    display: flex;
+    fill: #AFB1B8;
+    @include transition (250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    .regular-castomers .regular-castomers__link:hover &,
+    .regular-castomers .regular-castomers__link:hover & {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);}
+}

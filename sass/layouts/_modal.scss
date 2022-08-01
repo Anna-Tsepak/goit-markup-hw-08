@@ -1,0 +1,192 @@
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    right: 0;
+    opacity: 1;
+    @include transition (250ms, cubic-bezier(0.4, 0, 0.2, 1));
+
+}
+
+.modal {
+    width: 528px;
+    height: 581px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    padding: 40px;
+    @include transition (250ms, cubic-bezier(0.4, 0, 0.2, 1));
+
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.icon-modal {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    padding: 3px 4px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    @include transition (250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    &:focus .icon-modal {
+            fill: var(--accent-color);
+        }
+}
+
+.modal-batton {
+    position: absolute;
+    background-color: #ffffff;
+    border: #ffffff;
+    padding: 0px;
+    right: 8px;
+    top: 8px;
+}
+
+.modal-title {
+    @include fons (20px, 700, 1.15, 0.03em);
+    text-align: center;
+    color: #212121;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.modal-field {
+    margin-bottom: 10px;
+
+}
+
+.input-modal {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    outline: none;
+    padding-left: 42px;
+    @include transition (250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    &:focus {
+            border: 1px solid var(--accent-color);
+        }
+}
+
+
+.input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    @include transition (250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    .input-modal:focus+& {
+            fill: var(--accent-color);
+        }
+
+}
+
+.input-wrap {
+    position: relative;
+}
+
+
+.input-text {
+    width: 100%;
+    height: 120px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    padding: 12px 16px;
+    outline: none;
+    resize: none;
+    color: #757575;
+    &:focus {
+    border: 1px solid var(--accent-color);
+    &:placeholder {
+        @include fons (12px, none, 1.1, 0.03em);
+            color: rgba(117, 117, 117, 0.5);
+            padding-top: 12px;
+        }}}
+
+.icon-vector {
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7px;
+    @include transition (250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    .input-check:checked+.check-text & {
+            fill: #FFFFFF;
+            .input-check:checked+.check-text> & {
+                    background-color: #2196f3;
+                    border: transparent;
+                }
+        }
+}
+
+.check-text {
+    display: flex;
+}
+
+.modal-label {
+    @include fons (12px, none, 1.1, 0.01em);
+    color: #757575;
+    margin-bottom: 4px;
+}
+
+.check-icon {
+    fill: transparent;
+    @include transition (250ms, cubic-bezier(0.4, 0, 0.2, 1));
+}
+
+.button-sent {
+    display: block;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    @include fons (12px, 700, 1.8, 0.06em);
+    align-items: center;
+    background-color: var(--accent-color);
+    padding: 10px 52px;
+    border-radius: 4px;
+    border: var(--accent-color);
+    color: #FFFFFF;
+    margin: auto;
+    @include transition (250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    &:focus {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+}
+
+.acsept-text {
+    @include fons (14px, none, 2, 0.03em);
+    color: #757575;
+    margin: auto;
+    
+}
+
+.contract {
+    color: #2196F3;
+    text-decoration: underline;
+}
+
+.modal-check {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
