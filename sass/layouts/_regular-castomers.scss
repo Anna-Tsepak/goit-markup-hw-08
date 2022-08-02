@@ -1,11 +1,26 @@
 .regular-castomers {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
-
+    
 }
+.regular-castomers .regular-castomers__list
+{
+
+    @media screen and (min-width: 320px) {
+            width: calc((100% - 30px)/2);
+
+    @media screen and (min-width: 768px) {
+            width: calc((100% - 60px)/3); }
+     @media screen and (min-width: 1200px) {
+           width: calc((100% - 150px)/6);
+          }
+}}
+
 .regular-castomers__list .regular-castomers__link {
     display: flex;
-    width: 170px;
+    width: 100%;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;

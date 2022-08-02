@@ -1,27 +1,72 @@
 .header {
   background-color: var(--white-color);
 }
+
 .hero {
     background-color: var(--hero-futter-color);
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding: 118px 60px;
     background-image: linear-gradient(to right, rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)),
-        url(../images/fon.jpg);
-    max-width: 1600px;
+        url(../images/hero-480.jpg);
+    width: 100%;
+    height: 480px;
     background-position: center;
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
+    background-repeat: no-repeat;
+    @include retina {    background-image: linear-gradient ( rgb(47, 48, 58, 0.4),
+        rgb(47, 48, 58, 0.4)),
+              url(../images/hero-480@2x.jpg);
+        
 }
+
+  @media screen and (min-width: 768px) {
+   background-image: linear-gradient(rgb(47, 48, 58, 0.4),
+        rgb(47, 48, 58, 0.4)),
+                url(../images/hero-768.jpg);}
+
+ @media screen and (min-device-pixel-ratio: 2),
+ screen and (min-resolution: 192dpi),
+ screen and (min-resolution: 2dppx) {  background-image: linear-gradient(rgb(47, 48, 58, 0.4),
+        rgb(47, 48, 58, 0.4)),
+                    url(../images/hero-768@2x.jpg);
+             }
+
+           @media screen and (min-width: 1200px){
+            background-image: linear-gradient(rgb(47, 48, 58, 0.4),
+                    rgb(47, 48, 58, 0.4)),
+                url(../../images/hero-1600.jpg);
+        }
+    
+ @media screen and (min-device-pixel-ratio: 2),
+ screen and (min-resolution: 192dpi),
+ screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgb(47, 48, 58, 0.4),
+                    rgb(47, 48, 58, 0.4)),
+                url(../images/hero-1600@2x.jpg);
+        }
+
 
 .hero-title {
     text-transform: uppercase;
     color: var(--white-color);
-    @include fons (44px, 900, 1.36, 0.06em);
+    max-width: 360px;
+    height: 84px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6;
     text-align: center;
-    margin-bottom: 30px;
-    margin-top: 0px;
+
+    @media screen and (min-width: 768px) {
+     text-decoration:center ;
+    }
+    @media screen and (min-width: 1200px){
+            font-size: 44px;
+            line-height: 60px;
+            text-align: center;
+    }
+
 }
 
 .hero-button {
@@ -38,4 +83,4 @@
 &:focus {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-}
+    }}

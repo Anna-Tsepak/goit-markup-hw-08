@@ -1,5 +1,8 @@
 .section__aplication {
+  display: none;
   padding-top: 0px;
+  @media screen and (min-width: 1200px)
+  {display:contents ;}
 }
 
 .aplication__list{

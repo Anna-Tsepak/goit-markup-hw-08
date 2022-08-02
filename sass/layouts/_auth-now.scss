@@ -1,7 +1,10 @@
 .auth-nov {
-    display: flex;
+    display: none;
+    @media screen and (min-width: 768px){
+        display: contents;
+    }
     margin-left: auto;
-    &.item:not(:last-child) {
+    & .item:not(:last-child) {
             margin-right: 50px;
         }
 }

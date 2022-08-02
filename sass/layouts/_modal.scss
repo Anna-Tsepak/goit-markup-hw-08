@@ -112,7 +112,7 @@
     &:focus {
     border: 1px solid var(--accent-color);
     &:placeholder {
-        @include fons (12px, none, 1.1, 0.03em);
+        @include fons (12px, null, 1.1, 0.03em);
             color: rgba(117, 117, 117, 0.5);
             padding-top: 12px;
         }}}
@@ -140,7 +140,7 @@
 }
 
 .modal-label {
-    @include fons (12px, none, 1.1, 0.01em);
+    @include fons (12px, null, 1.1, 0.01em);
     color: #757575;
     margin-bottom: 4px;
 }
@@ -170,7 +170,7 @@
 }
 
 .acsept-text {
-    @include fons (14px, none, 2, 0.03em);
+    @include fons (14px, null, 2, 0.03em);
     color: #757575;
     margin: auto;
     

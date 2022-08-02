@@ -1,7 +1,7 @@
 .link,
 .contact-link {
 	text-decoration: none;
-	@include fons (14px, none, 2, 0.03em);
+	@include fons (14px, null, 2, 0.03em);
 	@include transition (250ms, cubic-bezier(0.4, 0, 0.2, 1));
 	
 	.address .address-link:hover & {
