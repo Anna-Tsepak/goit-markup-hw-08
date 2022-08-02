@@ -34,6 +34,14 @@
             fill: var(--accent-color);
             }
 }
+
+.link-auth-now {
+    @media screen and (min-width: 768px) {
+    font-weight: 500;
+        font-size: 12px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+}}
 .icon-contacts {
     display: flex;
     fill: #757575;

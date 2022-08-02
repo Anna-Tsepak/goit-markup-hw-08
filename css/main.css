@@ -42,6 +42,7 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     width: 720px;
+    margin: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -79,6 +80,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .logo {
+    display: flex;
     padding-top: 26px;
     padding-bottom: 26px;
     margin-right: 88px;
@@ -315,10 +317,6 @@ img {
   .comanda__paragraph {
     width: calc((100% - 90px) / 4);
   }
-}
-
-.comanda__paragraph:nth-child(4) {
-  margin-bottom: 0px;
 }
 
 .social-network .social-network__link {
@@ -1026,6 +1024,15 @@ img {
 .item .link-auth-now:hover, .item .link-auth-now:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .link-auth-now {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+  }
 }
 
 .icon-contacts {
