@@ -19,6 +19,18 @@
 		margin-top: 0px;
 	}
 }
+.adressa-location {
+	margin-bottom: 60px;
+
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	@media screen and (min-width: 1200px) {
+			text-align:start ;
+			margin-left: auto;
+				margin-right: auto;
+		}
+}
 
 .contact-link {
 	color: rgba(255, 255, 255, 0.6);

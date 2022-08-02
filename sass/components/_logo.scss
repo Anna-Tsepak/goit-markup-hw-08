@@ -33,6 +33,12 @@
 
 .logo-location__footer {
     padding-bottom: 20px;
+    text-align: center;
+    @media screen and (min-width: 1200px){
+    padding-bottom: 20px;
+    text-align: start;
+    
+    }
 }
 .logo-placing {
     margin: 0;
