@@ -3,7 +3,12 @@
 }
 .hero-location{
 padding: 118px 60px;
+
+@media screen and (min-width: 1200px){
+    padding: 0px;
 }
+}
+
 
 .hero {
     background-color: var(--hero-futter-color);
@@ -51,8 +56,6 @@ padding: 118px 60px;
 .hero-title {
     text-transform: uppercase;
     color: var(--white-color);
-    max-width: 360px;
-    height: 84px;
     font-weight: 900;
     font-size: 26px;
     line-height: 1.6;
@@ -64,11 +67,14 @@ padding: 118px 60px;
     text-align: center;
     margin: auto;
     margin-bottom: 30px;
+
     }
     @media screen and (min-width: 1200px){
+        @include fons (44px, 900, 1.5, 0.06em);
                 text-align: center;
                 margin: auto;
                 margin-bottom: 30px;
+                padding-top: 100px;
                
 }}
 

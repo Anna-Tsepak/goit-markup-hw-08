@@ -84,6 +84,8 @@ img {
 
 .logo {
   color: var(--accent-color);
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 @media screen and (min-width: 768px) {
   .logo {
@@ -93,7 +95,6 @@ img {
     padding-bottom: 0px;
     padding-top: 26px;
     padding-bottom: 26px;
-    margin-right: 88px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -124,7 +125,7 @@ img {
 }
 
 .logo-placing {
-  margin: 0;
+  margin: 0 px;
   padding-bottom: 0px;
   padding-top: 0px;
 }
@@ -320,6 +321,9 @@ img {
 .comanda__paragraph {
   margin-bottom: 30px;
 }
+.comanda__paragraph:last-child {
+  margin-bottom: auto;
+}
 @media screen and (min-width: 768px) {
   .comanda__paragraph {
     width: calc((100% - 30px) / 2);
@@ -329,10 +333,6 @@ img {
   .comanda__paragraph {
     width: calc((100% - 90px) / 4);
   }
-}
-
-.comanda__paragraph:last-child {
-  margin-bottom: 0px;
 }
 
 .social-network .social-network__link {
@@ -507,7 +507,12 @@ img {
 .examples-image:hover {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
+  .examples-image {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .examples-image {
     margin-bottom: 0px;
   }
@@ -585,23 +590,25 @@ img {
   width: 450px;
   background-color: #FFFFFF;
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   padding: 40px;
-  margin: 94px 15px;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .modal {
+    top: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
     width: 528px;
     height: 581px;
     top: 50%;
-    left: 50%;
-    margin: 0px;
   }
 }
 
@@ -1008,6 +1015,7 @@ img {
   .site-nav {
     display: flex;
     gap: 50px;
+    margin-left: 50px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1037,6 +1045,7 @@ img {
 .item .site-nav-link {
   padding-top: 32px;
   padding-bottom: 28px;
+  display: block;
 }
 .site-nav .item .site-nav-link:not(:last-child) {
   margin-right: 50px;
@@ -1141,6 +1150,11 @@ img {
 .hero-location {
   padding: 118px 60px;
 }
+@media screen and (min-width: 1200px) {
+  .hero-location {
+    padding: 0px;
+  }
+}
 
 .hero {
   background-color: var(--hero-futter-color);
@@ -1182,8 +1196,6 @@ img {
 .hero .hero-title {
   text-transform: uppercase;
   color: var(--white-color);
-  max-width: 360px;
-  height: 84px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.6;
@@ -1200,9 +1212,14 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero .hero-title {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.5;
+    letter-spacing: 0.06em;
     text-align: center;
     margin: auto;
     margin-bottom: 30px;
+    padding-top: 100px;
   }
 }
 .hero .hero-button {
