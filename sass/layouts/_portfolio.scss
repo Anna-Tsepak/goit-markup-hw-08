@@ -21,12 +21,21 @@
         }
 }
 
+
+
+
 .portfolio-list {
     display: flex;
-    margin-bottom: 50px;
-    justify-content: center;
-& .button:not(:last-child) {
-        margin-right: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    justify-content: start;
+    gap: 8px;
+
+    @media screen and (min-width: 768px){
+    display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-bottom: 40px;
     }
 }
 
@@ -50,11 +59,18 @@
 
 
 .examples-title {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    flex-basis: calc((100% - 60px) / 3);
-}
+    @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: auto;
+}}
 
 .examples-image {
     outline: 1px solid #eeeeee;
@@ -62,6 +78,15 @@
     &:hover {
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+}
+
+.examples-image {
+    @media screen and (min-width: 768px){
+        width: calc((100% - 30px)/2)
+    }
+         @media screen and (min-width: 1200px) {
+             width: calc((100% - 60px)/3)
+         }
 }
 
 .exampeles-cover-foto {
