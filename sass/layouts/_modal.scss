@@ -125,7 +125,10 @@
         @include fons (12px, null, 1.1, 0.03em);
             color: rgba(117, 117, 117, 0.5);
             padding-top: 12px;
-        }}}
+        }}
+    
+    
+    }
 
 .icon-vector {
     width: 16px;
@@ -181,9 +184,12 @@
 }
 
 .acsept-text {
-    @include fons (14px, null, 2, 0.03em);
+    @include fons (12px, null, 2, 0.03em);
     color: #757575;
     margin: auto;    
+     @media screen and (min-width: 1200px){
+        @include fons (14px, null, 2, 0.03em);
+     }
 }
 
 .contract {

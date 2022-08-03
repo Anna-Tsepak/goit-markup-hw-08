@@ -5,9 +5,9 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
-        padding-left: 84px;
+        padding-left: 20px;
          }      
-       & .item:not(:last-child) {
+       & .item:last-child{
             margin-right: 50px;
         }
 }

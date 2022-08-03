@@ -1,7 +1,13 @@
 .sections__title {
   color: var(--title-text-color);
-  @include fons (36px, 700, 1.16, 0.03em);
+  @include fons (28px, 700, 1.14, 0.03em);
+    text-align: center;
   margin-bottom: 30px;
   margin-top: 0px;
   text-align: center;
+  
+  @media screen and (min-width: 1200px){
+    @include fons (36px, 700, 1.16, 0.03em);
+    margin-bottom: 50px;
+  }
 }

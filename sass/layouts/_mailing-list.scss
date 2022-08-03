@@ -5,6 +5,10 @@
     margin-top: 0px;
     margin-bottom: 20px;
     text-align: center;
+    
+    @media screen and (min-width: 1200px) {
+            text-align: start;
+        }
 }
 
 .mailing {
@@ -27,6 +31,8 @@
       }
     @media screen and (min-width: 768px) {
                margin-bottom: 30px;
+               min-width: 450px;
+           
            }
                    @media screen and (min-width:1200px) {
                        min-width: 358px;
@@ -37,6 +43,7 @@
 
 @media screen and (min-width: 768px) {
     margin-top: 0px;
+    text-align: center;
     }
     @media screen and (min-width: 1200px){
     display: flex; }}
@@ -67,7 +74,7 @@
 .mailing-button{
     margin-left: 105px;
     @media screen and (min-width: 768px) {
-            margin-left: 200px;
+            margin-left: 40px;
         }
                   @media screen and (min-width: 1200px) {
                       margin-left: 12px;

@@ -42,7 +42,6 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     width: 720px;
-    margin: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -53,13 +52,23 @@ img {
 
 .sections__title {
   color: var(--title-text-color);
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 1.16;
+  line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   margin-bottom: 30px;
   margin-top: 0px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .sections__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
 }
 
 .logo,
@@ -75,12 +84,13 @@ img {
 
 .logo {
   color: var(--accent-color);
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 @media screen and (min-width: 768px) {
   .logo {
     display: flex;
+    justify-content: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
     padding-top: 26px;
     padding-bottom: 26px;
     margin-right: 88px;
@@ -88,8 +98,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .logo {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     margin-right: 93px;
   }
 }
@@ -115,6 +125,8 @@ img {
 
 .logo-placing {
   margin: 0;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
 .footer {
@@ -222,7 +234,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 95px;
+  margin-bottom: 94px;
 }
 
 .aplication__title {
@@ -317,6 +329,10 @@ img {
   .comanda__paragraph {
     width: calc((100% - 90px) / 4);
   }
+}
+
+.comanda__paragraph:last-child {
+  margin-bottom: 0px;
 }
 
 .social-network .social-network__link {
@@ -490,6 +506,11 @@ img {
 }
 .examples-image:hover {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 1200px) {
+  .examples-image {
+    margin-bottom: 0px;
+  }
 }
 
 .examples-image:last-child {
@@ -744,11 +765,18 @@ img {
 }
 
 .acsept-text {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 2;
   letter-spacing: 0.03em;
   color: #757575;
   margin: auto;
+}
+@media screen and (min-width: 1200px) {
+  .acsept-text {
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+  }
 }
 
 .contract {
@@ -775,6 +803,11 @@ img {
   margin-top: 0px;
   margin-bottom: 20px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .mailing-title {
+    text-align: start;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -803,6 +836,7 @@ img {
 @media screen and (min-width: 768px) {
   .mailing-list {
     margin-bottom: 30px;
+    min-width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -814,6 +848,7 @@ img {
 @media screen and (min-width: 768px) {
   .mailing-meil {
     margin-top: 0px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -854,7 +889,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .mailing-button {
-    margin-left: 200px;
+    margin-left: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1042,10 +1077,10 @@ img {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-    padding-left: 84px;
+    padding-left: 20px;
   }
 }
-.auth-nov .item:not(:last-child) {
+.auth-nov .item:last-child {
   margin-right: 50px;
 }
 
@@ -1106,18 +1141,13 @@ img {
 .hero-location {
   padding: 118px 60px;
 }
-@media screen and (min-width: 768px) {
-  .hero-location {
-    padding: 204px 118px;
-  }
-}
 
 .hero {
   background-color: var(--hero-futter-color);
   text-align: center;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon.jpg);
   width: 100%;
-  height: 480px;
+  height: 400px;
   background-position: center;
   background-size: cover;
   margin-left: auto;
@@ -1288,10 +1318,6 @@ img {
   letter-spacing: 0.02em;
   color: #2196F3;
   text-decoration: none;
-}
-
-.mob-contakts {
-  margin-top: 306px;
 }
 
 .mob-contakts-item {
